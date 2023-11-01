@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Projeto Mi casa</title>
+
+    <!-- Google Fonts - Robot-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<header>
+    <!-- Definição da barra de navegação -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-stilo-nav">
+        <section class="container py-3">
+            <a href="#" class="navbar-brand">
+                <img class="img-fluid" src="images/logo.jpg" alt="Logo">
+                <span></span>
+            </a>
+            <!-- Criação do botão para representar o menu hamburguer -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Definição dos links do menu -->
+            <section class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                </ul>
+            </section>
+        </section>
+    </nav>
+</header>
+
+<body>
+    <!-- Definição do Slider -->
+    <section class="container" id="slider-container">
+        <section class="carousel slide" id="slider" data-bs-interval="1000" data-bs-ride="carousel">
+            <section class="carousel-indicators">
+
+                <!-- Criação dos botões que representam as imagens-->
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true"
+                    aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </section>
+
+            <!-- Definição do conteúdo do carrousel -->
+            <section class="carousel-inner">
+                <section class="carousel-item active">
+                    <img src="images/carroseu 1.jpg" alt="Imagem 1" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Imagem 1</h5>
+                        <a href="#" class="btn btn-dark">Veja mais</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/carroseu 2.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Imagem 2</h5>
+                        <a href="#" class="btn btn-dark">Veja +</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/carroseu 3.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Imagem 3</h5>
+                        <a href="#" class="btn btn-dark">Veja mesmo</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/carroseu 4.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Imagem 4</h5>
+                        <a href="#" class="btn btn-dark">Veja logo</a>
+                    </section>
+                </section>
+            </section>
+
+            <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+                <i class="bi bi-arrow-counterclockwise"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-arrow-clockwise"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- Criação dos cards / banners-->
+        <section class="col-12 col-md-10 offset-1" id="mini-banners">
+            <section class="row">
+
+                <!-- Primeiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-cart4"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">compre antecipado</h5>
+                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Repudiandae, est?</p>
+                            <a href="#exampleModal" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Veja aqui</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Segundo card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-android2"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Segundo cartão</h5>
+                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Repudiandae, est?</p>
+                            <a href="#exampleModal2" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Veja mais</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Terceiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-backpack2"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Terceiro cartão</h5>
+                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Repudiandae, est?</p>
+                            <a href="#exampleModal3" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Veja mesmo</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Quarto card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-bar-chart-line"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Quarto cartão</h5>
+                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Repudiandae, est?</p>
+                            <a href="#exampleModal4" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                data-bs-whatever="@getbootstrap">Veja além</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Final dos cards -->
+            </section>
+        </section>
+    </section>
+
+    <!-- Destaques -->
+    <!-- Container dos desatques -->
+    <section class="container" id="featured-container">
+        <section class="col-12">
+            <h2 class="title primary-color">Trabalho em destaque</h2>
+            <p class="subtitle secondary-color">Conheça nossos projetos mais desafiadores</p>
+        </section>
+
+        <!-- Início das imagens-->
+        <section class="col-12" id="featured-images">
+            <section class="row g-4">
+
+                <section class="col-12 col-md-4">
+                    <img src="images/destaques 1.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/destaques 2.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/destaques 3.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/destaques 4.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/destaques 5.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/destaques 6.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+
+            </section>
+        </section>
+    </section>
+    <!-- Fim do container destaques -->
+
+
+    <!-- Informações -->
+    <section class="container" id="info-container">
+        <section class="col-12">
+            <h2 class="title primary-color">proximas atraçoes</h2>
+            <p class="subtitle-secondary-color"></p>
+        </section>
+
+        <section class="col-12 col-md-4">
+            <p>Use o plugin JavaScript modal para criar diálogos em seu site para notificações e outros tipos de
+                conteúdos
+                customizados.</p>
+            <a href="https://getbootstrap.com/docs/5.3/components/modal/" class="btn btn-primary"></a>
+        </section>
+
+        <!-- Nesta seção, iremos utilizar a adoção dos modais do Bootstrap -->
+        <section class="row">
+            <section class="col-12 col-md-4">
+                <img src="images/modal 2.jpg" alt="" class="img-fluid">
+            </section>
+
+            <section class="col-12 col-md-4">
+                <img src="images/modal 1.jpg" alt="" class="img-fluid">
+            </section>
+
+            <section class="col-12 col-md-4">
+                <img src="images/modal3.jpg" alt="" class="img-fluid">
+            </section>
+
+
+            <section class="col-12 col-md-4">
+                <img src="images/modal4.jpg" alt="" class="img-fluid">
+            </section>
+
+            <section class="col-12 col-md-4">
+                <img src="images/modal5.jpg" alt="" class="img-fluid">
+            </section>
+
+            <section class="col-12 col-md-4">
+                <img src="images/modal6.jpg" alt="" class="img-fluid">
+            </section>
+
+        </section>
+    </section>
+
+    <!-- Fim do container Informações -->
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <!-- Informações -->
+    <section class="col-12">
+        <h2 class="title primary-color">Footer</h2>
+        <p class="subtitle-secondary-color">Contatos</p>
+    </section>
+
+    <footer class="container-fluid bg-dark-color" id="footer">
+        <section class="container">
+            <section class="row">
+                <!-- FOOTER TOP -->
+                <section class="col-12" id="footer-top">
+                    <section class="row justify-content-between">
+                        <section class="col-4">
+                            <h2>
+                               EVVA CLUB
+                            </h2>
+                        </section>
+
+                        <!--<div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>-->
+
+                        <iframe id="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.964806506124!2d-47.81496242464033!3d-21.193556980497284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bfc62b064e1f%3A0x93ece4f014d1ce0d!2sEVVA%20CLUB!5e0!3m2!1spt-BR!2sbr!4v1698858811086!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+                        <section class="col-4" id="social-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-twitter"></i>
+                        </section>
+                    </section>
+                </section>
+
+
+
+
+
+                <!--modal-->
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Open modal for @mdo</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@fat">Open modal for @fat</button>
+                <button type="button" class="btn btn-primary">Open modal for @getbootstrap</button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Open modal for @mdo</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@fat">Open modal for @fat</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Open modal for @mdo</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@fat">Open modal for @fat</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Open modal for @mdo</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@fat">Open modal for @fat</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Bootstrap JS-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                    crossorigin="anonymous" defer></script>
+</body>
+
+</html>
